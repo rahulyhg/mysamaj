@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/resonSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/deleteReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Delete Reson"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/selectFamilyHeadTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="નવું કુટુંબ હેડ" />
+
+    <Spinner
+        android:id="@+id/dialogBoxSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

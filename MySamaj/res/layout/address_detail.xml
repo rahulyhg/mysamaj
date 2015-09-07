@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.andorid.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/addressNotAvalTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#069c88"
+        android:gravity="center"
+        android:text="Address"
+        android:textColor="#fff"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/address1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Address1" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/address2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Address2" />
+
+    <EditText
+        android:id="@+id/address3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Address3" />
+
+    <EditText
+        android:id="@+id/pinCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Pincode"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <Spinner
+        android:id="@+id/wardDataSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/add_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_default_bg"
+        android:text="Update Address"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tempGJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tempGJ"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+</LinearLayout>

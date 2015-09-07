@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/rowImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_launcher"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/fullNameEN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/rowImageView"
+        android:text="fullname"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/strMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/intGender"
+        android:layout_below="@+id/intGender"
+        android:text="mobile"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/intGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fullNameEN"
+        android:layout_below="@+id/fullNameEN"
+        android:layout_marginTop="16dp"
+        android:text="Gen"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/strEducationEN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/strMobile"
+        android:layout_below="@+id/strMobile"
+        android:text="Educ"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/strJobDetailEN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/intAge"
+        android:layout_below="@+id/intAge"
+        android:text="Job"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/intAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/strEducationEN"
+        android:layout_below="@+id/strEducationEN"
+        android:text="Age"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/hidden_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hidden value"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/strJobDetailEN"
+        android:layout_alignRight="@+id/strJobDetailEN"
+        android:src="@drawable/ic_mode_edit_black_24dp" />
+
+    <TextView
+        android:id="@+id/otherMobileNoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/strMobile"
+        android:layout_alignRight="@+id/strEducationEN"
+        android:text="otherM"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/intMaritalStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/intGender"
+        android:layout_alignBottom="@+id/intGender"
+        android:layout_alignRight="@+id/otherMobileNoMain"
+        android:text="Marital"
+        android:textColor="#000000" />
+
+</RelativeLayout>

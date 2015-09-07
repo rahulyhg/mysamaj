@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtPersonIdUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update ...."
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/profileImageUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/no_image" />
+
+        <EditText
+            android:id="@+id/updSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Surname"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/updName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Your Name"
+            android:inputType="textCapCharacters" />
+
+        <EditText
+            android:id="@+id/updFatherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Father Name"
+            android:inputType="textCapCharacters" />
+
+        <EditText
+            android:id="@+id/updDoB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date" />
+
+        <RadioGroup
+            android:id="@+id/radioSexGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/relatonTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relation" />
+
+        <Spinner
+            android:id="@+id/updRalationSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee" />
+
+        <TextView
+            android:id="@+id/MosalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mosal" />
+
+        <Spinner
+            android:id="@+id/updMosalSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/otherMosal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Other Mosal" 
+            android:visibility="gone">
+        </EditText>
+
+        <TextView
+            android:id="@+id/maritalStatusTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marital Status" />
+
+        <Spinner
+            android:id="@+id/updMaritalstatusSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/educationTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education" />
+
+        <Spinner
+            android:id="@+id/updEducationSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/jobTypeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job/Business Type" />
+
+        <Spinner
+            android:id="@+id/udpJobTypeSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/updJobDetailsEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Job Detail"
+            android:inputType="textMultiLine|textCapCharacters" />
+
+        <EditText
+            android:id="@+id/updMobileNoEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mobile No"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/udpOtherMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Other Mobile No"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/updEmailIdEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="examle@domain.com" />
+
+        <EditText
+            android:id="@+id/updFaceBookUrlEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Facebook URL"
+            android:inputType="textEmailAddress" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="66dp"
+                android:text="Delete" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="33dp"
+                android:layout_toLeftOf="@+id/btnDelete"
+                android:text="Update" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
