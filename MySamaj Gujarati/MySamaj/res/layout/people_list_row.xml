@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/peoplefullNameEN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fullname"
+        />
+
+    <TextView
+        android:id="@+id/peopleotherMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/peopletextView2"
+        android:layout_alignBottom="@+id/peopletextView2"
+        android:layout_alignParentRight="true"
+        android:text="OtherMobile"
+        />
+
+    <TextView
+        android:id="@+id/peopleageTxte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/peopleintAge"
+        android:layout_alignBottom="@+id/peopleintAge"
+        android:layout_alignLeft="@+id/peopletextView1"
+        android:text="ઉંમર:" />
+
+    <TextView
+        android:id="@+id/peopletextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="મોબાઇલ નંબર:" />
+
+    <TextView
+        android:id="@+id/peopleintGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peoplerelation"
+        android:layout_toRightOf="@+id/peopleintAge"
+        android:text="Gen"
+        />
+
+    <TextView
+        android:id="@+id/peopletextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/peopleageTxte"
+        android:layout_alignLeft="@+id/peopletextView2"
+        android:layout_alignRight="@+id/peoplefullNameEN"
+        android:text="જાતિ:" />
+
+    <TextView
+        android:id="@+id/peoplemosal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peopleintAge"
+        android:layout_toRightOf="@+id/peopleeduTxt"
+        android:text="Mosal" />
+
+    <TextView
+        android:id="@+id/peoplemosalTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peopleageTxte"
+        android:layout_below="@+id/peopleintAge"
+        android:text="મોસાળ:" />
+
+    <TextView
+        android:id="@+id/peopletextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peoplemosalTxt"
+        android:layout_below="@+id/peoplestrEducationEN"
+        android:text="સરનામું:" />
+
+    <TextView
+        android:id="@+id/peopleaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peopleeduTxt"
+        android:layout_below="@+id/peopletextView4"
+        android:text="Address"
+        />
+
+    <TextView
+        android:id="@+id/peoplestrEducationEN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peopletextView4"
+        android:layout_below="@+id/peopleeduTxt"
+        android:text="Educ"
+        />
+
+    <TextView
+        android:id="@+id/peoplerelationTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peopletextView3"
+        android:layout_below="@+id/peopletextView2"
+        android:text="સંબધ:" />
+
+    <TextView
+        android:id="@+id/peoplerelation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/peoplerelationTxt"
+        android:layout_alignBottom="@+id/peoplerelationTxt"
+        android:layout_toRightOf="@+id/peopletextView2"
+        android:text="Relation"
+        />
+
+    <TextView
+        android:id="@+id/peopletextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/peopleotherMobile"
+        android:layout_alignLeft="@+id/peoplerelationTxt"
+        android:layout_alignRight="@+id/peopletextView2"
+        android:layout_alignTop="@+id/peopleintMaritalStatus"
+        android:text="વય્વાહિક:" />
+
+    <TextView
+        android:id="@+id/peoplestrMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/peoplerelation"
+        android:layout_alignLeft="@+id/peoplerelation"
+        android:layout_toLeftOf="@+id/peopleotherMobile"
+        android:text="mobile"
+        />
+
+    <TextView
+        android:id="@+id/peoplestrJobDetailEN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peopleeduTxt"
+        android:layout_below="@+id/peopletextView3"
+        android:text="Job"
+        />
+
+    <TextView
+        android:id="@+id/peopleeduTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peoplestrEducationEN"
+        android:layout_alignRight="@+id/peopletextView4"
+        android:layout_below="@+id/peoplestrJobDetailEN"
+        android:text="અભ્યાસ:" />
+
+    <TextView
+        android:id="@+id/peopleintAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peopleintGender"
+        android:layout_toRightOf="@+id/peopleeduTxt"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/peopletextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peoplemosalTxt"
+        android:layout_below="@+id/peoplemosalTxt"
+        android:text="નોકરી:" />
+
+    <TextView
+        android:id="@+id/peopleintMaritalStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/peoplestrMobile"
+        android:layout_toRightOf="@+id/peoplefullNameEN"
+        android:text="Marital" />
+
+</RelativeLayout>
